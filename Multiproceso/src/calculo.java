@@ -18,9 +18,7 @@ public class calculo {
 		double resultado = 100 * Math.random() *
 		Math.pow( ((posicionNEO-posicionTierra)/(posicionNEO+posicionTierra)), 2);
 		guardarNEO(n1, resultado);
-		resultado = Math.round(resultado * 100.0) / 100.0;
-		Thread.sleep(500);		
-		
+		resultado = Math.round(resultado * 100.0) / 100.0;		
 		if(resultado > 10) {
 			System.err.println("\n\n-------------¡ALERTA MUNDIAL!--------------");
 			System.err.println("Nombre\t" + n1);
